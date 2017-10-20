@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		*{
+			padding: 0;
+			margin: 0;
+		}
+
+		body{
+			height: 100%;
+			background: url('./bg.jpg');
+			background-size: auto auto;
+			color: #ffffff;
+			font-family: sans-serif;
+		}
+
+		#content{
+			width: 100%;
+			text-align: center;
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+		}
+
+		h1{
+			font-size: 54px;
+			text-transform: uppercase;
+			margin-bottom: 20px; 
+		}
+
+		p{
+			font-size: 21px;
+			margin: 0 25px 40px 25px;
+		}
+
+		a{
+			font-size: 18px;
+			color: #ffffff;
+			border: 1px solid #ffffff;
+			border-radius: 3px; 
+			padding:  10px 100px;
+			text-decoration: none;
+		}
+	</style>
+	<script type="text/javascript">
+		window.onload=function(){
+			var submit = document.getElementById("submit");
+			submit.onclick = function(e) {
+				e.preventDefault();
+				alert("提交成功");
+			}
+		}
+	</script>
+</head>
+<body>
+	<div id="content">
+		<h1>Let's Learn HTML5</h1>
+		<p>发挥你的美感与想象力，探索Web开发的无限可能,现邀您一同踏上HTML5的学习之路</p>
+		<a href="#" id="submit">邀您参加</a>
+	</div>
+
+</body>
+</html>
